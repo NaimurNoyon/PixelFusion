@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lottie/lottie.dart';
+import 'package:pixel_fusion/Screens/home_screen.dart';
 import '../Constants/custom_page_route.dart';
-import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -16,11 +15,11 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Use Future.delayed to navigate after 3 seconds
-    Future.delayed(const Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 2), () {
       // Use the custom page transition animation when navigating
-      Navigator.of(context).push(
+      Navigator.of(context).pushReplacement(
         CustomPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => const HomeScreen(),
         ),
       );
     });
@@ -37,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Lottie.asset('assets/animation/splash.json'),
+        child: Image.asset("assets/images/native_splash.jpg"),
       ),
     );
   }

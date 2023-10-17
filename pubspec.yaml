@@ -37,13 +37,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie:
   flutter_native_splash:
+  carousel_slider:
+  flutter_screenutil:
 
 
 flutter_native_splash:
   android: true
   ios: true
   web: false
-  color: "#000000"
+  background_image: "assets/images/native_splash.jpg"
 
 
 dev_dependencies:
