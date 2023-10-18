@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Use the custom page transition animation when navigating
       Navigator.of(context).pushReplacement(
         CustomPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => LandingScreen(),
         ),
       );
     });
