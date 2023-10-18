@@ -79,7 +79,7 @@ class _LandingScreenState extends State<LandingScreen> {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.1), // Shadow color
+                    color: Colors.black.withOpacity(0.2), // Shadow color
                     spreadRadius: 2.sp, // Spread radius
                     blurRadius: 5.sp, // Blur radius
                     offset: Offset(0, -2), // Offset position of shadow
@@ -97,7 +97,7 @@ class _LandingScreenState extends State<LandingScreen> {
                         return TextStyle(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          color: AppColors.colorWhiteHighEmp,
+                          color: AppColors.colorRed,
                         );
                       } else {
                         return TextStyle(
@@ -157,7 +157,7 @@ NavigationDestination bottomElementBuilder(
     label: title,
     selectedIcon: Image.asset(
       logo,
-      color: AppColors.colorPink,
+      color: AppColors.colorRed,
       height: 24.h,
     ),
   );
