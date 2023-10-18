@@ -97,13 +97,13 @@ class _LandingScreenState extends State<LandingScreen> {
                         return TextStyle(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          color: AppColors.colorRed,
+                          color: AppColors.colorWhiteHighEmp,
                         );
                       } else {
                         return TextStyle(
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w600,
-                          color: AppColors.colorWhiteHighEmp,
+                          color: AppColors.colorPrimary,
                         );
                       }
                     },
@@ -157,7 +157,7 @@ NavigationDestination bottomElementBuilder(
     label: title,
     selectedIcon: Image.asset(
       logo,
-      color: AppColors.colorRedLight,
+      color: AppColors.colorPink,
       height: 24.h,
     ),
   );

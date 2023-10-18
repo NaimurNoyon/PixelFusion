@@ -10,6 +10,8 @@ class Demo extends StatefulWidget {
 class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }
